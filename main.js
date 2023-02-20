@@ -5,8 +5,15 @@ $(document).ready(() => {
 
     function updateHrLinesOrders() {
         hrLinesOrders = document.querySelectorAll('.hrTxtAdd');
+        deleteButton = document.querySelectorAll('.txtoltelsEdit');
         console.log(hrLinesOrders.length)
-        for (let el of hrLinesOrders) {
+        for (let j = 0; j < deleteButton.length; j++) {
+            let el = deleteButton[j];
+            $(el).attr('id', `txtDltEdit${j+2}`);
+        }
+        for (let i = 0; i < hrLinesOrders.length; i++) {
+            let el = hrLinesOrders[i];
+            $(el).attr('data-order', i);
             el.addEventListener('click', () => {
                 if ($(el).css("color") == "rgb(0, 0, 0)") {
                     

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hrTxtAdd:hover {
+            transition: 0.6s ease;
+            color: #c4c4c4;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="addTxt2Edit" class="form-label m-0">Specifikace produktu</label>
+    <hr class="my-1 hrTxtAdd" style="color: #fff; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right" title
+        data-order="0">
+    <div class="input-group editTxt">
+        <div class="input-group-text">
+            <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit1"
+                name="textyEdit[1].TextNewsCheck" type="checkbox" value="1" aria-label="Checkbox for following text
+                input">
+        </div>
+        <input value="spec5" name="textyEdit[1].ApplianceText" id="applianceTextEdit1"
+            class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
+            aria-label="form-control-sm textyEdit[1].ApplianceText">
+        <input type="hidden" id="hiddenDelete Edit1" name="textyEdit[1].Delete" value="0">
+    </div>
+    <hr class="my-1 hrTxtAdd" style="color: #fff; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right" title
+        data-order="1">
+    <div class="input-group editxt">
+        <a id="txtDltEdit2" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
+        <div class="input-group-text">
+            <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit2"
+                name="textyEdit[2].TextNewsCheck" type="checkbox" value="2" aria-label="Checkbox for following text
+                input">
+        </div>
+        <input value="spec5" name="textyEdit[2].ApplianceText" id="applianceTextEdit2"
+            class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
+            aria-label="form-control-sm textyEdit[2].ApplianceText">
+        <input type="hidden" id="hiddenDelete Edit1" name="textyEdit[1].Delete" value="0">
+    </div>
+    <hr class="my-1 hrTxtAdd activeHrTxtAdd" style="color: #000; height: 3px;" data-bs-toggle="tooltip"
+        data-bs-placement="right" title data-order="2">
+    <div class="input-group editTxt">
+        <a id="txtDltEdit3" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
+        <div class="input-group-text">
+            <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit3"
+                name="textyEdit[3].TextNewsCheck" type="checkbox" value="3" aria-label="Checkbox for following text
+                input">
+        </div>
+        <input value="spec5" name="textyEdit[3].ApplianceText" id="applianceTextEditi"
+            class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
+            aria-label="form-control-sm textyEdit[3].ApplianceText">
+        <input type="hidden" id="hiddenDelete Edit3" name="textyEdit[3].Delete" value="0">
+    </div>
+    <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
+        title data-order="3">
+    <div class="input-group editTxt">
+        <a id="txtDltEdit4" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
+        <div class="input-group-text">
+            <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit4"
+                name="textyEdit[4].TextNewsCheck" type="checkbox" value="4" aria-label="Checkbox for following text
+                input">
+        </div>
+        <input value="spec5" name="textyEdit[5].ApplianceText" id="applianceTextEditi"
+            class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
+            aria-label="form-control-sm textyEdit[5].ApplianceText">
+        <input type="hidden" id="hiddenDelete Edit5" name="textyEdit[5].Delete" value="0">
+    </div>
+    <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
+        title data-order="4">
+    <div class="input-group"> </div>
+    <button type="button" id="addTxt2Edit" class="btn btn-primary btn-sm mb-3 mt-2">
+        Přidat Specifikaci
+    </button>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

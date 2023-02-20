@@ -6,11 +6,32 @@ $(document).ready(() => {
     function updateHrLinesOrders() {
         hrLinesOrders = document.querySelectorAll('.hrTxtAdd');
         deleteButton = document.querySelectorAll('.txtoltelsEdit');
-        console.log(hrLinesOrders.length)
+        inputCheckboxOption = document.querySelectorAll('.txtChckEdit');
+        inputValueOption = document.querySelectorAll('.txtSpecEdit');
+        inputHiddenDelete = document.querySelectorAll('.hidden-delete');
+
         for (let j = 0; j < deleteButton.length; j++) {
             let el = deleteButton[j];
             $(el).attr('id', `txtDltEdit${j+2}`);
         }
+
+
+        for (let k = 0; k < inputCheckboxOption.length; k++) {
+            let el = inputCheckboxOption[k];
+            $(el).attr('id', `applianceTextCheckEdit${k+1}`);
+            $(el).attr('value', `${k+1}`);
+            $(el).attr('name', `textyEdit[${k+1}].TextNewsCheck`);
+        }
+
+        for (let k = 0; k < inputValueOption.length; k++) {
+            let el = inputValueOption[k];   
+            $(el).attr('id', `applianceTextEdit${k+1}`);
+            $(el).attr('name', `textyEdit[${k+1}.ApplianceText`);
+            $(el).attr('aria-label', `form-control-sm textyEdit[${k+1}].ApplianceText`);
+        }
+
+        
+
         for (let i = 0; i < hrLinesOrders.length; i++) {
             let el = hrLinesOrders[i];
             $(el).attr('data-order', i);

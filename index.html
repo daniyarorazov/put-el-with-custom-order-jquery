@@ -16,9 +16,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .hrTxtAdd:hover {
-            transition: 0.6s ease;
             color: #c4c4c4;
             cursor: pointer;
+            border: 2px solid blue;
         }
     </style>
 </head>
@@ -51,7 +51,7 @@
         <input value="spec5" name="textyEdit[2].ApplianceText" id="applianceTextEdit2"
             class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
             aria-label="form-control-sm textyEdit[2].ApplianceText">
-        <input type="hidden" id="hiddenDelete Edit1" name="textyEdit[1].Delete" value="0">
+        <input type="hidden" id="hiddenDeleteEdit1" class="hidden-delete" name="textyEdit[2].Delete" value="0">
     </div>
     <hr class="my-1 hrTxtAdd activeHrTxtAdd" style="color: #000; height: 3px;" data-bs-toggle="tooltip"
         data-bs-placement="right" title data-order="2">
@@ -66,7 +66,7 @@
         <input value="spec5" name="textyEdit[3].ApplianceText" id="applianceTextEditi"
             class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
             aria-label="form-control-sm textyEdit[3].ApplianceText">
-        <input type="hidden" id="hiddenDelete Edit3" name="textyEdit[3].Delete" value="0">
+        <input type="hidden" id="hiddenDelete Edit3" class="hidden-delete" name="textyEdit[3].Delete" value="0">
     </div>
     <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
         title data-order="3">
@@ -81,7 +81,7 @@
         <input value="spec5" name="textyEdit[5].ApplianceText" id="applianceTextEditi"
             class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
             aria-label="form-control-sm textyEdit[5].ApplianceText">
-        <input type="hidden" id="hiddenDelete Edit5" name="textyEdit[5].Delete" value="0">
+        <input type="hidden" id="hiddenDelete Edit5" class="hidden-delete" name="textyEdit[5].Delete" value="0">
     </div>
     <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
         title data-order="4">

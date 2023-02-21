@@ -20,6 +20,11 @@
             cursor: pointer;
             border: 2px solid blue;
         }
+
+        .hrTxtAdd[data-order="0"]:hover {
+            border: 0;
+            cursor: auto;
+        }
     </style>
 </head>
 
@@ -30,62 +35,68 @@
     <div class="input-group editTxt">
         <div class="input-group-text">
             <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit1"
+                name="textyEdit[0].TextNewsCheck" type="checkbox" value="1" aria-label="Checkbox for following text
+                input">
+        </div>
+        <input value="spec5" name="textyEdit[0].ApplianceText" id="applianceTextEdit1"
+            class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
+            aria-label="form-control-sm textyEdit[0].ApplianceText">
+    </div>
+
+    <hr class="my-1 hrTxtAdd" style="color: #fff; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right" title
+        data-order="1">
+
+    <div class="input-group editxt">
+        <a id="txtDltEdit1" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
+            data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
+        <div class="input-group-text">
+            <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit1"
                 name="textyEdit[1].TextNewsCheck" type="checkbox" value="1" aria-label="Checkbox for following text
                 input">
         </div>
         <input value="spec5" name="textyEdit[1].ApplianceText" id="applianceTextEdit1"
             class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
             aria-label="form-control-sm textyEdit[1].ApplianceText">
-        <input type="hidden" id="hiddenDelete Edit1" name="textyEdit[1].Delete" value="0">
+        <input type="hidden" id="hiddenDeleteEdit1" class="hidden-delete" name="textyEdit[1].Delete" value="0">
     </div>
-    <hr class="my-1 hrTxtAdd" style="color: #fff; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right" title
-        data-order="1">
-    <div class="input-group editxt">
+
+    <hr class="my-1 hrTxtAdd activeHrTxtAdd" style="color: #000; height: 3px;" data-bs-toggle="tooltip"
+        data-bs-placement="right" title data-order="2">
+
+    <div class="input-group editTxt">
         <a id="txtDltEdit2" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
             data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
         <div class="input-group-text">
             <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit2"
-                name="textyEdit[2].TextNewsCheck" type="checkbox" value="2" aria-label="Checkbox for following text
+                name="textyEdit[2].TextNewsCheck" type="checkbox" value="1" aria-label="Checkbox for following text
                 input">
         </div>
         <input value="spec5" name="textyEdit[2].ApplianceText" id="applianceTextEdit2"
             class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
             aria-label="form-control-sm textyEdit[2].ApplianceText">
-        <input type="hidden" id="hiddenDeleteEdit1" class="hidden-delete" name="textyEdit[2].Delete" value="0">
+        <input type="hidden" id="hiddenDeleteEdit2" class="hidden-delete" name="textyEdit[2].Delete" value="0">
     </div>
-    <hr class="my-1 hrTxtAdd activeHrTxtAdd" style="color: #000; height: 3px;" data-bs-toggle="tooltip"
-        data-bs-placement="right" title data-order="2">
+
+    <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
+        title data-order="3">
+
     <div class="input-group editTxt">
         <a id="txtDltEdit3" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
             data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
         <div class="input-group-text">
             <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit3"
-                name="textyEdit[3].TextNewsCheck" type="checkbox" value="3" aria-label="Checkbox for following text
+                name="textyEdit[3].TextNewsCheck" type="checkbox" value="1" aria-label="Checkbox for following text
                 input">
         </div>
-        <input value="spec5" name="textyEdit[3].ApplianceText" id="applianceTextEditi"
+        <input value="spec5" name="textyEdit[3].ApplianceText" id="applianceTextEdit3"
             class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
             aria-label="form-control-sm textyEdit[3].ApplianceText">
-        <input type="hidden" id="hiddenDelete Edit3" class="hidden-delete" name="textyEdit[3].Delete" value="0">
+        <input type="hidden" id="hiddenDeleteEdit3" class="hidden-delete" name="textyEdit[3].Delete" value="0">
     </div>
-    <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
-        title data-order="3">
-    <div class="input-group editTxt">
-        <a id="txtDltEdit4" class="btn btn-danger btn-sm txtoltelsEdit" data-bs-toggle="tooltip"
-            data-bs-placement="left" title="Smazat popisek"><i class="fas fa-close"></i></a>
-        <div class="input-group-text">
-            <input class="form-check-input mt-0 txtChckEdit" checked id="applianceTextCheckEdit4"
-                name="textyEdit[4].TextNewsCheck" type="checkbox" value="4" aria-label="Checkbox for following text
-                input">
-        </div>
-        <input value="spec5" name="textyEdit[5].ApplianceText" id="applianceTextEditi"
-            class="form-control form-control-sm txtSpecEdit" type="text" placeholder="Zadejte text..."
-            aria-label="form-control-sm textyEdit[5].ApplianceText">
-        <input type="hidden" id="hiddenDelete Edit5" class="hidden-delete" name="textyEdit[5].Delete" value="0">
-    </div>
+
     <hr class="my-1 hrTxtAdd" style="color: white; height: 3px;" data-bs-toggle="tooltip" data-bs-placement="right"
         title data-order="4">
-    <div class="input-group"> </div>
+
     <button type="button" id="addTxt2Edit" class="btn btn-primary btn-sm mb-3 mt-2">
         Přidat Specifikaci
     </button>
